@@ -1,0 +1,4 @@
+numpy
+matplotlib
+pyshtools
+Displacement_strain_planet

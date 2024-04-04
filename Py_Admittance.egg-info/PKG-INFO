@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: Py_Admittance
+Version: 0.1.0
+Summary: Admittance calculation for gravity analyses.
+Home-page: https://github.com/AB-Ares/Py_Admittance
+Author: Adrien Broquet
+Author-email: adrien.broquet@dlr.de
+Keywords: gravity,elastic thickness,admittance,crust,geophysics,planetary sciences
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pyshtools
+Requires-Dist: Displacement_strain_planet
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![DOI](https://zenodo.org/badge/368906695.svg)](https://zenodo.org/badge/latestdoi/368906695)
+
+# Py_Admittance
+
+Admittance calculations for geophysics and gravity analyses.
+
+## Description
+
+**Py_Admittance** provides functions and an example scripts for calculating global/localized admittances of gravity and topography. These can be used to invert for parameters such as the elastic thickness of the lithosphere and density of the crust and surface.
+
+The provided admittance model is from [Broquet & Wieczorek (2019)](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019JE005959).
+
+## Methods
+`ForwardGravity`  Compute the theortical gravity field given a set of input parameters.
+
+`TransferTGz`  Compute theoretical transfer functions for calculating the theortical admittance and correlation given a set of input parameters.
+
+`LocalAdmitCorr`  Compute the localized admittance of two functions.
+
+`GlobalAdmitCorr` Compute the global admittance of two functions.
+
+## Example scripts
+`Mars_AdmitGlob`  A script to compute the global theoretical and observed admittance and correlation on Mars given a set of input parameters. The theortical admittance is computed following `Broquet & Wieczorek (2019) <https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019JE005959>`_.
+
+`Mars_AdmitLoc`  A script to compute the localized theoretical and observed admittance and correlation on Mars given a set of input parameters. The theortical admittance is computed following `Broquet & Wieczorek (2019) <https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019JE005959>`_ and localized to Olympus Mons.
+
+`Mars_DSPGlob`  A script to compute the global theoretical and observed admittance and correlation on Mars given a set of input parameters. The theortical admittance is computed using the `Displacement_strain_planet <https://github.com/AB-Ares/Displacement_strain_planet>`_ package (see Broquet & Andrews-Hanna, 2023).
+
+`Mars_DSPLoc`  A script to compute the localized theoretical and observed admittance and correlation on Mars given a set of input parameters. The theortical admittance is computed using the `Displacement_strain_planet <https://github.com/AB-Ares/Displacement_strain_planet>`_ package (see Broquet & Andrews-Hanna, 2023) and localized to Olympus Mons.
+
+## How to install and run Py_Admittance
+If you would like to modify the source code, download the Displacement_strain_planet repository and install using pip (or pip3 depending on your installation).
+```bash
+    git clone https://github.com/AB-Ares/Py_Admittance.git
+    cd Te_HF_Conversion/
+    pip install .
+```
+
+## To run the example scripts
+```bash
+    cd examples
+    python Mars_AdmitLoc.py 
+    python Mars_DSPLoc.py 
+```
+
+## Author
+[Adrien Broquet](https://ab-ares.github.io/website/) (adrien.broquet@dlr.de)
+
+## Cite
+You can cite the latest release of the package as:
+Adrien Broquet. AB-Ares/Py_Admittance: 0.1.0 (Version 0.1.0). Zenodo. http://doi.org/10.5281/zenodo.4973893

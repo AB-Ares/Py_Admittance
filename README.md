@@ -1,5 +1,5 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![DOI](https://zenodo.org/badge/368906695.svg)](https://zenodo.org/badge/latestdoi/368906695)
+[![DOI](https://zenodo.org/badge/781898403.svg)](https://zenodo.org/doi/10.5281/zenodo.10925820)
 
 # Py_Admittance
 
@@ -7,13 +7,13 @@ Admittance calculations for geophysics and gravity analyses.
 
 ## Description
 
-**Py_Admittance** provides functions and an example scripts for calculating global/localized admittances of gravity and topography. These can be used to invert for parameters such as the elastic thickness of the lithosphere and density of the crust and surface.
+**Py_Admittance** provides functions and example scripts for calculating global/localized admittances of gravity and topography. These can be used to invert for parameters such as the elastic thickness of the lithosphere and density of the crust and surface.
 
 The provided admittance model is from [Broquet & Wieczorek (2019)](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019JE005959).
 
 ## Documentation
 
-The full documentation can be found at https://ab-ares.github.io/Displacement_strain_planet/.
+The full documentation can be found at https://ab-ares.github.io/Py_Admittance/.
 
 ## Dependencies
 
@@ -59,4 +59,4 @@ If you would like to modify the source code, download the Displacement_strain_pl
 
 ## Cite
 You can cite the latest release of the package as:
-Adrien Broquet. AB-Ares/Py_Admittance: 0.1.0 (Version 0.1.0). Zenodo. http://doi.org/10.5281/zenodo.4973893
+Adrien Broquet. AB-Ares/Py_Admittance: 0.1.0 (Version 0.1.0). Zenodo. http://doi.org/10.5281/zenodo.10925820

@@ -31,9 +31,9 @@ An example script shows how one can use my [DSP (Displacement_strain_planet)]( h
 `GlobalAdmitCorr` Compute the global admittance of two functions.
 
 ## Example scripts
-`Mars_AdmitGlob`  A script to compute the global theoretical and observed admittance and correlation on Mars given a set of input parameters. The theortical admittance is computed following [Broquet & Wieczorek (2019)] (https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019JE005959).
+`Mars_AdmitGlob`  A script to compute the global theoretical and observed admittance and correlation on Mars given a set of input parameters. The theortical admittance is computed following [Broquet & Wieczorek (2019)](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019JE005959).
 
-`Mars_AdmitLoc`  A script to compute the localized theoretical and observed admittance and correlation on Mars given a set of input parameters. The theortical admittance is computed following [Broquet & Wieczorek (2019)] (https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019JE005959) and localized to Olympus Mons.
+`Mars_AdmitLoc`  A script to compute the localized theoretical and observed admittance and correlation on Mars given a set of input parameters. The theortical admittance is computed following [Broquet & Wieczorek (2019)](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019JE005959) and localized to Olympus Mons.
 
 `Mars_DSPGlob`  A script to compute the global theoretical and observed admittance and correlation on Mars given a set of input parameters. The theortical admittance is computed using the [DSP (Displacement_strain_planet)]( https://github.com/AB-Ares/Displacement_strain_planet) package (see [Broquet & Andrews-Hanna, 2023](https://doi.org/10.1038/s41550-022-01836-3)).
 
@@ -43,7 +43,7 @@ An example script shows how one can use my [DSP (Displacement_strain_planet)]( h
 If you would like to modify the source code, download the Displacement_strain_planet repository and install using pip (or pip3 depending on your installation).
 ```bash
     git clone https://github.com/AB-Ares/Py_Admittance.git
-    cd Te_HF_Conversion/
+    cd Py_Admittance/
     pip install .
 ```
 

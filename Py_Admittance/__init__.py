@@ -4,7 +4,7 @@ Py_Admittance
 Py_Admittance provides functions and an example scripts for calculating global/localized admittances of gravity and topography. These can be used to invert for parameters such as the elastic thickness of the lithosphere and density of the crust and surface.
 
    ForwardGravity
-      Compute the theortical gravity field given a set of input
+      Compute the theoretical gravity field given a set of input
       parameters.
 
    TransferTGz

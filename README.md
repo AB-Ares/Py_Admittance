@@ -22,22 +22,22 @@ Some of these functions rely heavily on the [pyshtools](https://shtools.github.i
 An example script shows how one can use my [DSP (Displacement_strain_planet)]( https://github.com/AB-Ares/Displacement_strain_planet) package to compute theoretical admittances. This package can be used to add more complexity to the load model (see [this notebook](https://ab-ares.github.io/Displacement_strain_planet/notebooks/Run_demo.html)) when compared to the simple transfer function described in Py_Admittance. DSP also considers tangential loads. 
 
 ## Methods
-`ForwardGravity`  Compute the theortical gravity field given a set of input parameters.
+`ForwardGravity`  Compute the theoretical gravity field given a set of input parameters.
 
-`TransferTGz`  Compute theoretical transfer functions for calculating the theortical admittance and correlation given a set of input parameters.
+`TransferTGz`  Compute theoretical transfer functions for calculating the theoretical admittance and correlation given a set of input parameters.
 
 `LocalAdmitCorr`  Compute the localized admittance of two functions.
 
 `GlobalAdmitCorr` Compute the global admittance of two functions.
 
 ## Example scripts
-`Mars_AdmitGlob`  A script to compute the global theoretical and observed admittance and correlation on Mars given a set of input parameters. The theortical admittance is computed following [Broquet & Wieczorek (2019)](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019JE005959).
+`Mars_AdmitGlob`  A script to compute the global theoretical and observed admittance and correlation on Mars given a set of input parameters. The theoretical admittance is computed following [Broquet & Wieczorek (2019)](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019JE005959).
 
-`Mars_AdmitLoc`  A script to compute the localized theoretical and observed admittance and correlation on Mars given a set of input parameters. The theortical admittance is computed following [Broquet & Wieczorek (2019)](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019JE005959) and localized to Olympus Mons.
+`Mars_AdmitLoc`  A script to compute the localized theoretical and observed admittance and correlation on Mars given a set of input parameters. The theoretical admittance is computed following [Broquet & Wieczorek (2019)](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019JE005959) and localized to Olympus Mons.
 
-`Mars_DSPGlob`  A script to compute the global theoretical and observed admittance and correlation on Mars given a set of input parameters. The theortical admittance is computed using the [DSP (Displacement_strain_planet)]( https://github.com/AB-Ares/Displacement_strain_planet) package (see [Broquet & Andrews-Hanna, 2023](https://doi.org/10.1038/s41550-022-01836-3)).
+`Mars_DSPGlob`  A script to compute the global theoretical and observed admittance and correlation on Mars given a set of input parameters. The theoretical admittance is computed using the [DSP (Displacement_strain_planet)]( https://github.com/AB-Ares/Displacement_strain_planet) package (see [Broquet & Andrews-Hanna, 2023](https://doi.org/10.1038/s41550-022-01836-3)).
 
-`Mars_DSPLoc`  A script to compute the localized theoretical and observed admittance and correlation on Mars given a set of input parameters. The theortical admittance is computed using the [DSP (Displacement_strain_planet)]( https://github.com/AB-Ares/Displacement_strain_planet) package (see [Broquet & Andrews-Hanna, 2023](https://doi.org/10.1038/s41550-022-01836-3)) and localized to Olympus Mons.
+`Mars_DSPLoc`  A script to compute the localized theoretical and observed admittance and correlation on Mars given a set of input parameters. The theoretical admittance is computed using the [DSP (Displacement_strain_planet)]( https://github.com/AB-Ares/Displacement_strain_planet) package (see [Broquet & Andrews-Hanna, 2023](https://doi.org/10.1038/s41550-022-01836-3)) and localized to Olympus Mons.
 
 ## How to install and run Py_Admittance
 If you would like to modify the source code, download the Displacement_strain_planet repository and install using pip (or pip3 depending on your installation).

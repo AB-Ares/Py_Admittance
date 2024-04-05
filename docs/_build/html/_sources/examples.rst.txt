@@ -8,16 +8,16 @@ Examples
 ------------------------------------------------------------------------------------------------------------------------------------
 
 ``Mars_AdmitGlob.py``
-    A script to compute the global theoretical and observed admittance and correlation on Mars given a set of input parameters. The theortical admittance is computed following `Broquet & Wieczorek (2019) <https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019JE005959>`_.
+    A script to compute the global theoretical and observed admittance and correlation on Mars given a set of input parameters. The theoretical admittance is computed following `Broquet & Wieczorek (2019) <https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019JE005959>`_.
 
 ``Mars_AdmitLoc.py``
-    A script to compute the localized theoretical and observed admittance and correlation on Mars given a set of input parameters. The theortical admittance is computed following `Broquet & Wieczorek (2019) <https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019JE005959>`_ and localized to Olympus Mons.
+    A script to compute the localized theoretical and observed admittance and correlation on Mars given a set of input parameters. The theoretical admittance is computed following `Broquet & Wieczorek (2019) <https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019JE005959>`_ and localized to Olympus Mons.
 
 `Displacement_strain_planet (DSP) <https://github.com/AB-Ares/Displacement_strain_planet>`_ admittance model
 --------------------------------------------------------------------------------------------------------------------
 
 ``Mars_DSPGlob.py``
-    A script to compute the global theoretical and observed admittance and correlation on Mars given a set of input parameters. The theortical admittance is computed using the `Displacement_strain_planet <https://github.com/AB-Ares/Displacement_strain_planet>`_ package (see `Broquet & Andrews-Hanna, 2023 <https://doi.org/10.1038/s41550-022-01836-3>`_).
+    A script to compute the global theoretical and observed admittance and correlation on Mars given a set of input parameters. The theoretical admittance is computed using the `Displacement_strain_planet <https://github.com/AB-Ares/Displacement_strain_planet>`_ package (see `Broquet & Andrews-Hanna, 2023 <https://doi.org/10.1038/s41550-022-01836-3>`_).
 
 ``Mars_DSPLoc.py``
-    A script to compute the localized theoretical and observed admittance and correlation on Mars given a set of input parameters. The theortical admittance is computed using the `Displacement_strain_planet <https://github.com/AB-Ares/Displacement_strain_planet>`_ package (see `Broquet & Andrews-Hanna, 2023 <https://doi.org/10.1038/s41550-022-01836-3>`_) and localized to Olympus Mons.
+    A script to compute the localized theoretical and observed admittance and correlation on Mars given a set of input parameters. The theoretical admittance is computed using the `Displacement_strain_planet <https://github.com/AB-Ares/Displacement_strain_planet>`_ package (see `Broquet & Andrews-Hanna, 2023 <https://doi.org/10.1038/s41550-022-01836-3>`_) and localized to Olympus Mons.

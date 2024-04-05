@@ -3,6 +3,7 @@
 .gitignore
 LICENSE
 README.md
+pyproject.toml
 setup.py
 .github/workflows/python-publish.yml
 Py_Admittance/.DS_Store

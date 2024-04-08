@@ -17,7 +17,7 @@ The full documentation can be found at https://ab-ares.github.io/Py_Admittance/.
 
 ## Dependencies
 
-Some of these functions rely heavily on the [pyshtools](https://shtools.github.io/SHTOOLS/) package of [Wieczorek & Meschede (2018)](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018GC007529) that is used to perform the spherical harmonic transforms, spatio-spectral localization, and finite-amplitude calculations.
+Some functions rely heavily on the [pyshtools](https://shtools.github.io/SHTOOLS/) package of [Wieczorek & Meschede (2018)](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018GC007529) that is used to perform the spherical harmonic transforms, spatio-spectral localization, and finite-amplitude calculations.
 
 An example script shows how one can use my [DSP (Displacement_strain_planet)]( https://github.com/AB-Ares/Displacement_strain_planet) package to compute theoretical admittances. This package can be used to add more complexity to the load model (see [this notebook](https://ab-ares.github.io/Displacement_strain_planet/notebooks/Run_demo.html)) when compared to the simple transfer function described in Py_Admittance. DSP also considers tangential loads. 
 

@@ -58,5 +58,5 @@ If you would like to modify the source code, download the Displacement_strain_pl
 [Adrien Broquet](https://ab-ares.github.io/website/) (adrien.broquet@dlr.de)
 
 ## Cite
-You can cite the latest release of the package as:
+If you use the package, please cite the latest release as:
 Adrien Broquet. AB-Ares/Py_Admittance: 0.1.0 (Version 0.1.0). Zenodo. http://doi.org/10.5281/zenodo.10925820

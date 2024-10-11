@@ -306,7 +306,7 @@ def ForwardGravity(
                     is added back for finite-amplitude calculations.
                     If set to a float, only option_deg2 * topography is used as a load.
                     If anything else, no special treatment is applied to degree-2.
-    return_corr : string, optional, default = False
+    return_corr : boolean, optional, default = False
                     If set to True, return the theoretical global correlation.
     """
 
@@ -449,7 +449,7 @@ def ForwardGravity(
     return grav_Th, Corr_Th
 
 
-def LocalAdmitCorr(topo, grav, lat, lon, theta, lwin, lmax=None, quiet=True):
+def LocalAdmitCorr(topo, grav, lat, lon, theta, lwin, lmax=None, quiet=True, plot_window=False):
     """
     Compute the localized admittance and correlation functions from the
     input gravity and topography. For more information, see Broquet &
@@ -482,9 +482,11 @@ def LocalAdmitCorr(topo, grav, lat, lon, theta, lwin, lmax=None, quiet=True):
                     Maximum degree at which the admittance and correlation
                     are computed. If None, lmax = min(lmax_topo, lmax_grav).
                     lmax must be <= min(lmax_topo, lmax_grav).
-    quiet : string, optional, default = True
+    quiet : boolean, optional, default = True
                     If False, the function will provide information regarding the
                     spatio-spectral concentration of the localization window.
+    plot_window : boolean, optional, default = False
+                    If True, plot the localization window energy
     """
     if not quiet:
         capwin = pysh.SHWindow.from_cap(theta=theta, lwin=lwin)
@@ -516,6 +518,11 @@ def LocalAdmitCorr(topo, grav, lat, lon, theta, lwin, lmax=None, quiet=True):
     admit_loc, error_loc, corr_loc = pysh.spectralanalysis.SHAdmitCorr(
         grav_clm_loc, topo_clm_loc
     )
+
+    if plot_window:
+        import matplotlib.pyplot as plt
+        pysh.SHGrid.from_array(grid_taper).plot()
+        plt.show()
 
     return admit_loc, corr_loc, error_loc
 
